@@ -1,0 +1,77 @@
+{% extends "landing/layout.html" %}
+{% block title %}
+"Contact"
+{% endblock %}
+{% block content %}
+
+<main id="main">
+    <div class="video-container">
+      <header class="header header-page-height">
+        <div class="header-media">
+          {% load static %}
+          <img src="{% static 'landing/images/Header - Contact.jpg' %}" alt="" srcset="">
+      </div>
+        <div class="container">
+          <div class="row2">
+            <div class="overlay-desc mx-auto mb-5">
+              <h1 class="text-center text-header mx-auto my-auto">CONTACTO</h1>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+    </header>
+
+    <!--header fin-->
+
+    <!--Contacto Section-->
+
+    <section class="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <h1 class="mx-auto big">Contacta con Nosotros</h1>
+            <p class="text-muted lead mt-3">Estamos aquí para ayudar. Contáctenos para comentarios generales, consultas,
+              asociaciones corporativas, o simplemente para saludar.</p>
+            <h3 class="contacto-mail mt-3">info@happymoments.com</h3>
+            <h3 class="contacto-mail mt-3">+593-992584759</h3>
+            
+            <div class="socialBox mb-0">
+              <ul class="list-unstyled list-inline mt-4">
+                <li class="list-inline-item social1">
+                  <a href="http://www.facebook.com/tonsvz" class="btn-floating btn-fb mx-1">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li class="list-inline-item social1">
+                  <a href="http://www.instagram.com/tonsofcode" class="btn-floating btn-tw mx-1">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li class="list-inline-item social1">
+                  <a href="#" class="btn-floating btn-gplus mx-1">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 formulario">
+            <div class="container2">  
+              <form id="contact" action="/contact/" method="post">
+              {% csrf_token %}
+                <h3>Dejanos un Mensaje</h3>
+                  {{ contact }}
+                  <fieldset>
+                       <button name="submit" type="submit" id="contact-submit" class = "bg-dark" data-submit="...Enviando">Enviar</button>
+                  </fieldset>
+               </form>
+            </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+
+{% endblock %}

@@ -1,0 +1,183 @@
+{% extends "landing/layout.html" %}
+{% block title %}
+    Menu
+{% endblock %}
+{% block content %}
+
+    
+
+<main id="main">
+  <div class="video-container">
+    <header class="header header-page-height">
+      <div class="header-media">
+        {% load static %}
+        <img src="{% static 'landing/images/Header - Menu.jpg' %}" alt="" srcset="">
+      </div>
+      <div class="container">
+        <div class="row2">
+          <div class="overlay-desc mx-auto mb-5">
+            <h1 class="text-center text-header mx-auto my-4 ">MENU</h1>
+
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>
+
+  <!--header fin-->
+  <!--Info - Menu-->
+  <section class="mt-3 mx-3 " id="bowling">
+    <h1 class="big" >Ven y prueba nuestras opciones</h1>
+    <p class="text-muted lead">Happy Moments offers upscale party spaces, sophisticated menus,
+      full-service bars, and cutting edge a/v systems. Our party packages offer food, beverage and entertainment
+      options to accommodate any party. Our professional event planners can work with you to create the perfect party
+      package to fit your needs. For an unforgettable night, plan your next event at Happy Moments!</p>
+  </section>
+
+  <!--Menu Section-->
+
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-md-5 menu-list">
+        <h1>NUESTRO MENU</h1>
+        <ul class="plus">
+          <li>
+            <ion-icon name="flash-outline"></ion-icon><a data-target="#carouselContent" data-slide-to="0"
+              href="#">Snacks</a> 
+          </li>
+          <li>
+            <ion-icon name="flash-outline"></ion-icon><a data-target="#carouselContent" data-slide-to="1"
+              href="#">Bebidas & Cafe</a>
+          </li>
+          <li>
+            <ion-icon name="flash-outline"></ion-icon><a data-target="#carouselContent" data-slide-to="2"
+              href="#">Postres</a>
+          </li>
+          <li>
+            <ion-icon name="flash-outline"></ion-icon><a data-target="#carouselContent" data-slide-to="3"
+              href="#">Fiestas Corporativas</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7 slider ">
+        <div class="container-fluid">
+          <div id="carouselContent" class="carousel slide" data-interval="false">
+            <div class="carousel-inner text-dark carousel-text-menu" role="listbox">
+              <div class="carousel-item active carou-text" id="food">
+                <h1>SNACKS</h1><br>
+                <h3>Alitas BBQ & Mostaza</h3>
+                <p class="text-muted">Existe un festival anual de Alitas los neoyorquinos gastan 1.2 billones en
+                  Alitas. Aquí queremos crear tu propio festival, Vamos a comer y perder la cuenta!</p>
+
+                <h3>Baby Ribs</h3>
+                <p class="text-muted">Esta deliciosa invención de costillas es típica de la gastronomía
+                  estadounidense. Preparamos éste plato a fuego lento, cuidamos su jugo y grasa natural, amamos su
+                  toque ahumado. <b>Acompañalo con tu salsa preferida.</b></p>
+
+                <h3>Chicharrón Colombiano</h3>
+                <p class="text-muted">Desde la Región andina de Colombia un crujiente trozo de cerdo. En esta cultura
+                  está en la mente y en el corazón compartir la mesa.
+                  Pídelo con tus bastones de papa.</p>
+
+
+                <h3>Nachos & Guacamole con Pico de Gallo + Salsa Ranch</h3>
+                <p class="text-muted">Originarios del país azteca, este sencillo y delicioso plato acompaña super bien
+                  cualquier hora del día, perfecto entre sabores y texturas. <br>
+                  ¡Pide Nachos con todos sus acompañantes!</p>
+
+                <h3>Hot Dogs</h3>
+               
+                <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                <h3>Humitas</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, dolore?</p>
+                
+                <h3>Bolones</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, dolore?</p>
+                
+                <h3>Empanadas</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, dolore?</p>
+                
+                <h3>Salchipapa</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, dolore?</p>
+              </div>
+              <div class="carousel-item  carousel-text carou-text " id="food">
+                <h1>Bebidas & Cafe</h1>
+                <h3>Cafés</h3>
+                <br>
+                <ul>
+                    <h5>Espresso Simple o Doble</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Cappuccino</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Latte</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Moccaccino</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Americano</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Frappe de Cafe</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Latte Vainilla</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Chocolate Caliente</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+
+                </ul>
+
+              </div>
+              <div class="carousel-item  carousel-text carou-text " id="food">
+                <h1>Postres</h1>
+                <br>
+                <ul>
+                  <h5>Torta de Chocolate</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Torta de Zanahoria</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Torta de Naranja</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Torta de Platano</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Cheesecake de Frutos Rojos</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Cheesecake de Maracuyá</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                    <h5>Galletas</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, similique.</p>
+                </ul>
+              </div>
+              <div class="carousel-item  carousel-text carou-text " id="food">
+                <h1>EVENTOS ESPECIALEasdadsadS</h1>
+                <h3>Alitas BBQ</h3>
+              </div>
+            </div>
+            <div class="arrow-control-carousel">
+              <a class="carousel-control-prev arrows2 arrow-left-menu" href="#carouselContent" role="button"
+                data-slide="prev" slide="1">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next arrows2 arrow-right-menu" href="#carouselContent" role="button"
+                data-slide="next" slide="2">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="mt-3 mx-5 " id="bowling">
+    <h1 class="big">Ven y Celebra con Nosotros </h1>
+    <div class="book mb-4 text-center ">
+      <button class="btn btn-dark btn-events " data-modal="#modal-book~">
+        <a class="reserva" href="home#reservation">Reservas</a>
+      </button>
+    </div>
+</main>
+
+{% endblock %}

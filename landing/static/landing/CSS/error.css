@@ -1,0 +1,9 @@
+.error input, .error select {
+    border: 2px red solid;
+}
+
+.errorlist
+    {
+        color: red;
+        list-style-type: none;
+    }

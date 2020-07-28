@@ -1,0 +1,37 @@
+{% extends "landing/layout.html" %}
+{% block title %}
+Reservas list
+{% endblock %}
+{% block content %}
+
+    <!-- <table class = "table table-hover">
+        <thead>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha y hora</th>
+            <th scope="col">Correo</th>
+        </thead>
+        <tbody> -->
+            {% for reserva in reservas_list %}
+            <div class="accordion" id = "tableAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                {{ reserva.persona.nombre }}, {{reverva.persona.apellido }}, {{ reserva.fecha_reservacion }}, {{ reserva.persona.hora_reservacion }}, {{ reserva.persona.correo_electronico }}
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#tableAccordion">
+                            <div class="card-body">
+                                {{ reserva.persona.numero_telefono }}, {{ reserva.evento }}, {{ reserva.numero_invitados }}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        <!-- </tbody> -->
+    <!-- </table> -->
+
+{% endblock %}

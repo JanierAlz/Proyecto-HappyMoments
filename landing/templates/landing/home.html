@@ -1,0 +1,330 @@
+{% extends "landing/layout.html" %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+
+
+<main id="main">
+  <div class="video-container">
+    <header class="header header-page-height">
+      <video class="embed-responsive embed-responsive-21by9"
+        poster="https://www.luckystrikesocial.com/wp-content/uploads/2017/12/home-poster-1024x576.jpg"
+        playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        {% load static %}
+        <source src="{% static 'landing/media/header-video.mp4' %}" type="video/mp4"></video>
+      <div class="container">
+        <div class="row2">
+          <div class="overlay-desc mx-auto">
+            <h1 class="hm-text mx-auto text-center">BEST IDEAS <br>STARTS WITH A <br> HAPPY MOMENT</h1>
+          </div>
+        </div>
+      </div>
+      <div class="logo-desc">
+        {% load static %}
+        <img src="{% static 'landing/images/HappyMomentsLogo.png' %}" alt="" class="logo">
+      </div>
+      <div class="button">
+        <button class="btn btn-dark text-center btn-header "><a href="/home#reservation">Reservas</a></button>
+      </div>
+  </div>
+  </header>
+
+  <section class="manifest container" id="bowling">
+    <h1 class="text-dark mt-3 mb-3">¡CONOCENOS!</h1>
+    <p class="text-muted">HAPPY MOMENTS ES EL LUGAR PERFECTO PARA
+      UN <br>MOMENTO AGRADABLE, BOWLING, SNACKS,BILLAR, JUEGOS ARCADE<br> Y MUSICA EN VIVO PARA TUS EVENTOS U
+      OCASIONES ESPECIALES. </p>
+  </section>
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="portfolio-item mt-6 boxes">
+            <a href="#">
+              <img src="https://informa-press.it/wp-content/uploads/2019/05/arcade-and-food-696x464.jpg"
+                class="img-fluid">
+
+            </a>
+            <div class="portfolio-details p-4">
+              <h4 class="text-dark subtext2">Enlace Informativo #1</h4>
+              <p class="text-muted mb-0">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+          </div>
+          <div class="portfolio-item mt-6 mb-6 boxes">
+            <a href="#">
+              <img src="https://informa-press.it/wp-content/uploads/2019/05/arcade-and-food-696x464.jpg""
+                class=" img-fluid">
+            </a>
+            <div class="portfolio-details p-4">
+              <h4 class="text-dark subtext2">Enlace Informativo #2</h4>
+              <p class="text-muted mb-0">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6 subtext2">
+          <div class="portfolio-item mt-6 mb-6 boxes">
+            <a href="#">
+              <img src="https://informa-press.it/wp-content/uploads/2019/05/arcade-and-food-696x464.jpg""
+                class=" img-fluid">
+            </a>
+            <div class="portfolio-details p-4">
+              <h4 class="text-dark subtext2 boxes">Enlace Informativo #3</h4>
+              <p class="text-muted mb-0 subtext2">Lorem ipsum dolor sit amet. </p>
+            </div>
+
+          </div>
+          <div class="portfolio-item mt-6 mb-6 boxes">
+            <a href="#">
+              <img src="https://informa-press.it/wp-content/uploads/2019/05/arcade-and-food-696x464.jpg""
+                class=" img-fluid">
+            </a>
+            <div class="portfolio-details  p-4">
+              <h4 class="text-dark subtext2">Enlace Informativo #4</h4>
+              <p class="text-muted mb-0">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events mt-3" id="bowling">
+    <hr>
+    <h1 class="text-dark">MAS QUE BOWLING Y JUEGOS </h1>
+    <p class="text-muted">HAPPY MOMENTS IS MUCH MORE THAN BOWLING. WE PROVIDE A ONE-OF-A-KIND UNIQUE
+      EXPERIENCE AT EACH LOCATION. MAKE SURE TO VIEW OUR HAPPY MOMENTS CONCEPTS TO SEE WHAT WE GOT. </p>
+
+    <div class="menuLink text-center">
+      <a href="/events">Ver Eventos</a>
+    </div>
+  </section>
+  <section class="manifest-menu mt-3 mb-4" id="bowling">
+    <h1 class="text-dark">NUESTRO MENU</h1>
+    <p class="text-muted">RICH COMFORT FOOD WITH LOCALLY SOURCED INGREDIENTS, OUR GASTROPUB DINING EXPERIENCE FUSES A
+      CHEF-DRIVEN RESTAURANT AND MIXOLOGIST BAR INTO A STIMULATING ATMOSPHERE OF DISCOVERY. FROM UNIMPEACHABLE
+      CLASSICS WITH A CONTEMPORARY TWIST TO EXCLUSIVE NEWCOMERS, OUR KITCHEN EPITOMIZES LAID-BACK REFINEMENT. </p>
+    <div class="menuLink">
+      <a href="/menu">Visita Nuestro Menu</a>
+    </div>
+  </section>
+
+  <!--CAROUSEL-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100"
+          src="https://images.prismic.io/bar-louie/d4623e581fe88c075316d4c79746fb32b78d11e6_hot-honey-chicken-sandwich-hb.jpg"
+          alt="First slide">
+        <div class="carousel-caption">
+          <h5>Desliza1</h5>
+          <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore.
+            Deserunt excepturi quas
+            vero.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://images.prismic.io/bar-louie/d4623e581fe88c075316d4c79746fb32b78d11e6_hot-honey-chicken-sandwich-hb.jpg"
+          alt="Second slide">
+        <div class="carousel-caption">
+          <h5>Desliza1</h5>
+          <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore.
+            Deserunt excepturi quas
+            vero.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://images.prismic.io/bar-louie/d4623e581fe88c075316d4c79746fb32b78d11e6_hot-honey-chicken-sandwich-hb.jpg"
+          alt="Third slide">
+        <div class="carousel-caption">
+          <h5>Desliza3</h5>
+          <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore.
+            Deserunt excepturi quas vero.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev arrows" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next arrows" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--Carousele Fin-->
+  <section class="manifest mt-5" id="bowling">
+    <h2 class="text-dark text-center">¡Obten mas información sobre los próximos eventos y ofertas exclusivas!</h2>
+    <p class="text-muted">HAPPY MOMENTS ES MUCHO MAS QUE BOWLING Y JUEGOS. OFRECEMOS UN EXCELENTE AMBIENTE PARA
+      CELEBRACIONES Y OCASIONES ESPECIALES. </p>
+    <div class="book2 text-center  ml-3 bot-btn text-center">
+      <button class="btn btn-dark btn-index text-center" data-modal="#modal-book~">
+        <a class="reserva text-center" href="/home#reservation">Reservas</a>
+      </button>
+    </div>
+  </section>
+
+
+
+  <section class="about ">
+    <hr>
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1 class="text-dark text-center " id="location">UBICACION<br> </h1>
+          <p class="text-muted lead">Estamos ubicados en la plataforma gubernamental norte, disponemos de un amplio
+            parqueadero para su comodidad y seguridad.</p>
+        </div>
+        <div class="col-xl-6 mapa ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.6073367295548!2d-78.4845157191181!3d-0.17337725850995955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a9accdd0f05%3A0xba625dd627ec9619!2sPlataforma%20Gubernamental%20de%20Gesti%C3%B3n%20Financiera!5e0!3m2!1ses!2sec!4v1591847820974!5m2!1ses!2sec"
+            width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+
+      </div>
+
+    </div>
+    <hr>
+
+    <section id="reservation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 res-box">
+            <h1 class=" text-dark text-center ">RESERVACIONES</h1>
+            <p class ="text-muted">Reserva con nosotros, ven conoce y disfruta de un lugar agradable donde podras disfrutas de los mejores juegos de Arcade, Billar, Snacks, Musica en Vivo y mas!</p>
+          </div>
+
+          <div class="col-md-6 col-sm-6 mr-auto text-dark text-form">
+            <form id="contact" method="post" action="/" autocomplete="off" novalidate="novalidate">
+              {% csrf_token %}
+
+
+              <fieldset class="modal__fieldset " >
+                <legend class="modal__legend bigText ">1. Informacion de Contacto</legend>
+
+                <div class="modal__row  container">
+                  <div class="row">
+                    <div class="modal__col form-group mr-3">
+                      {{ formReserva.nombre.errors }}
+                      <label for="bookFirstName" class="sr-only">First Name</label>
+                      {{ formReserva.nombre }}
+                    </div>
+
+                    <div class="modal__col form-group mr-3">
+                      {{ formReserva.apellido.errors }}
+                      <label for="bookLastName" class="sr-only ">Last Name</label>
+                      {{ formReserva.apellido }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="modal__col form-group  mr-3">
+                      {{ formReserva.correo_electronico.errors }}
+                      <label for="bookEmail" class="sr-only">Email</label>
+                      {{ formReserva.correo_electronico }}
+                    </div>
+
+                    <div class="modal__col form-group mr-3 ">
+                      {{ formReserva.numero_telefono.errors }}
+                      <label for="bookPhone" class="sr-only">Phone</label>
+                      {{ formReserva.numero_telefono }}
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="modal__fieldset">
+                <legend class="sr-only">Form options</legend>
+
+                <label class="form-checkbox form-group">
+                  <span class="form-checkbox__element">
+                    <input type="checkbox" name="newsletter" class="form-checkbox__input">
+                    <span class="form-checkbox__tick"></span>
+                  </span>
+                  Mantenerme al tanto de promociones y eventos.
+                </label>
+              </fieldset>
+
+              <fieldset class="modal__fieldset">
+                <legend class="modal__legend bigText">2. Ocasion del Evento</legend>
+                <div class="modal__row">
+
+
+                  <div class="modal__col form-group ">
+                    <label for="bookTime" class="sr-only">Select Start Time</label>
+                      {{ formReserva.evento }}
+                    </select>
+                  </div>
+                </div>
+
+              </fieldset>
+              <fieldset class="modal__fieldset">
+                <legend class="modal__legend bigText">3. Detalles del Evento</legend>
+                <div class="modal__row">
+                  <div id="modal-book-2-date" class="input-group date" data-date-format="dd-mm-yyyy">
+                    <label for="bookDate" class="sr-only"></label>
+                    <input readonly type="text" name="date" id="datepicker"
+                      class=" bg-light datepicker form-control form-control--arrow hasDatepicker"
+                      placeholder="Fecha de Evento" required="">
+
+                  </div>
+
+                  <div class="modal__col form-group mt-3 ">
+                      {{ formReserva.hora_reservacion }}
+                  </div>
+                </div>
+                <div class="form-group">
+                  {{ formReserva.numero_invitados.errors }}
+                  <label for="bookGuests" class="sr-only">Estimated number of guests</label>
+                  {{ formReserva.numero_invitados }}
+                </div>
+                <div class="btn-res mb-3">
+                  <button name="submit" type="submit" id="contact-submit" class="bg-dark btn-res"
+                    data-submit="...Enviando">Enviar</button>
+                </div>
+              </fieldset>
+            </form>
+            
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section id="reservation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <h1 class=" text-dark text-center ">RESERVACIONES</h1>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 mr-auto text-dark">
+          <form id="contact" autocomplete ="off" novalidate="novalidate" method="POST">
+            {% csrf_token %}
+            {{ formPersona }}
+            {{ formReserva }}
+            <button name="submit" type="submit" id="contact-submit" class = "bg-dark btn-res" data-submit="...Enviando">Enviar</button>
+          </form>
+        </div>            
+      </div>
+
+    </section> -->
+</main>
+
+  
+{% endblock %}
